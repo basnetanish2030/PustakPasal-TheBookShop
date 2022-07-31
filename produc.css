@@ -1,0 +1,109 @@
+.detail_space{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.image_holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    min-width: 500px;
+    flex: 1;
+    overflow: hidden;
+}
+.image_holder img{
+    height: 400px;
+    width: 400px;
+}
+.movable{
+    justify-content: center;
+    height: auto;
+    width: 500px;
+    color: rgb(88, 80, 80);
+    display: flex;
+    flex-direction: column;
+}
+
+.detail h1,.detail h2,.detail h3,.detail h4,.detail h5,.detail h6{
+    margin: 0;
+   
+}
+.img_list{
+    height: 90px;
+    width: 400px;
+}
+.img_list ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choose{
+    height: 80px;
+    width: 80px;
+    box-shadow: 0px 0px 2px rgb(88, 80, 80);
+    cursor: pointer;
+}
+.choose:hover{
+    box-shadow: 0px 0px 6px black;
+}
+.choose img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .detail_space{
+        display: block;
+        margin-top: 100px;
+        overflow: hidden;
+    }
+    .image_holder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 300px;
+        min-width: 300px;
+        overflow: hidden;
+    }
+    .image_holder img{
+        height: 300px;
+        width: 300px;
+    }
+    .movable{
+        height: auto;
+        width: 99%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 30px 0px 30px 0px;
+        color: rgb(88, 80, 80);
+        align-items: center;
+    }
+    .detail{
+        width: auto;
+    }
+    .img_list{
+        height: 90px;
+        width: 350px;
+    }
+    .img_list ul{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: inline-flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .choose img{
+        height: 100%;
+        width: 100%;
+    }
+}

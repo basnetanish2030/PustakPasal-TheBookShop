@@ -1,0 +1,151 @@
+.item_row{
+    width: 100%;
+    align-items: center;
+    background-color: #ffffff;
+    height: 300px;
+    overflow: hidden;
+}
+.item_list .grey{
+    color: rgb(88, 80, 80);
+    text-align: center;
+}
+.item_row .title-box{
+    display: flex;
+    height: 15%;
+    align-items: center;
+    background-color: rgb(88, 80, 80);
+    color: #ffffff;
+    margin: 0;
+}
+.item_row .title-box h3{
+    margin-left: 20px;
+    flex: 1;
+}
+.item_row .title-box a{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.item_row .title-box a:hover{
+    text-decoration: underline;
+}
+.item_list{
+    height: 85%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll; 
+}
+.item{
+    position: relative;
+    min-width: 170px;
+    min-height: 190px;
+    max-width: 170px;
+    max-height: 190px;
+    margin: 0px 10px 0px 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px rgb(88, 80, 80);
+    overflow: hidden;
+}
+.filter_box{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    color: rgb(88, 80, 80);
+}
+.search{
+    position: absolute;
+    right: 10px;
+}
+.search input{
+    height: 30px;
+    width: 210px;
+    font-size: medium;
+    background-color: #ffffff;
+    border: 2px solid rgb(88, 80, 80);
+    border-radius: 4px;
+}
+.search button{
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid rgb(88, 80, 80);
+    border-radius: 4px;
+}
+.search button:hover{
+    background-color: rgb(88, 80, 80);
+    color: #ffffff;
+}
+.show{
+    font-weight: 600;
+}
+#district{
+    height: 30px;
+    width: 150px;
+    font-size: medium;
+    background-color: #ffffff;
+    border: 2px solid rgb(88, 80, 80);
+    border-radius: 4px;
+}
+.item .image_holder{
+    height: 100%;
+    width: 100%;
+}
+.image_holder img{
+    height: 100%;
+    width: 100%;
+}
+.item .description{
+    position: absolute;
+    height: auto;
+    bottom: -33px;
+    width: 100%;
+    background-color: rgb(88, 80, 80);
+    color: #ffffff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.item .description:hover{
+    bottom: 0px;
+}
+.description .info{
+    padding: 5px 0px 0px 10px
+}
+.info h4{
+    padding: 0;
+    margin: 0;
+}
+.info h5{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:800px){
+    
+    .filter_box{
+        margin-top: 75px;
+    }
+    .show{
+        display: none;
+    }
+}
+
+@media screen and (max-width:530px){
+    
+    .filter_box h3{
+        display: none;
+    }
+    #district{
+        display: none;
+    }
+    .show{
+        display: none;
+    }
+}
